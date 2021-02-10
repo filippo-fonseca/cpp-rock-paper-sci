@@ -53,10 +53,14 @@ int main()
         } else {
             cout << "Computer wins." << endl;
             computer_score++;
-        }
+        } cout << "Press any key to continue..."
 
         if (computer_score == player_score) {
-            
+            cout << "Gane is Drawn." << endl;
+        } else if (player_score > computer_score) {
+            cout << player_name << "won the game." << endl;
+        } else if (computer_score > player_score) {
+            cout << "The computer has won." << endl;
         }
 
         return 0;
